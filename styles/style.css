@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
+main {
+    align-items: center;
+}
+
 body {
     background-color: #eee;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    width: 85vw;
+    width: 100vw;
     display: flex;
+    padding: 0 20px;
     position: sticky;
     flex-direction: row;
     justify-content: space-between;
@@ -24,14 +29,13 @@ header img {
 
 .logo {
     display: flex;
-    padding-left: 30px;
 }
 
 .navbar {
     display: flex;
-    width: 50vw;
+    width: 65vw;
     padding: 10px;
-    justify-content: end;
+    flex-direction: row-reverse;
 }
 
 ul {
@@ -48,10 +52,10 @@ li {
 }
 
 .nav-button {
-    padding: 2px 6px;
+    padding: 12px;
     background-color: red;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .nav-button:hover {
@@ -60,4 +64,52 @@ li {
 
 li:hover {
     text-decoration: underline;
+}
+
+.gallery, .explore {
+    display: block;
+    flex-wrap: wrap;
+    margin: auto 50px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.gallery-header, .explore-header {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    padding: 0 auto;
+    justify-content: center;
+}
+
+.gallery-pic {
+    max-width: 960px;
+    min-width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+}
+
+.pic {
+    border-radius: 12px;
+    margin: 8px;
+}
+
+.explore-input {
+    display: flex;
+    flex-direction: column;
+    margin: 12px auto;
+    padding: auto;
+    justify-content: center;
+}
+
+.explore-button {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 4px;
+    justify-content: center;
+    font-size: 1rem;       
 }
