@@ -20,6 +20,7 @@ header {
     position: sticky;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 header img {
@@ -51,11 +52,13 @@ li {
     padding: 10px;
 }
 
-.nav-button {
+.nav-button, .explore-button {
     padding: 12px;
     background-color: red;
     color: white;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .nav-button:hover {
@@ -97,6 +100,10 @@ li:hover {
     margin: 8px;
 }
 
+input {
+    font-size: 1.2rem;
+}
+
 .explore-input {
     display: flex;
     flex-direction: column;
@@ -109,7 +116,11 @@ li:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 4px;
     justify-content: center;
-    font-size: 1rem;       
+    font-size: 1rem;
+    /*  padding: 12px;
+    color: #FFDB58;
+    background-color: #66023c;
+    border-radius: 20px;
+    font-weight: bold;        */
 }
